@@ -1,0 +1,31 @@
+[build-system]
+requires = ["scikit-build-core>=0.9", "pybind11>=2.13"]
+build-backend = "scikit_build_core.build"
+
+[project]
+name = "hsmm-regime"
+version = "0.1.0"
+description = "Bayesian online changepoint detection and HSMM regime modeling for dynamic asset allocation"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.26",
+    "scipy>=1.11",
+    "pandas>=2.1",
+    "matplotlib>=3.8",
+    "statsmodels>=0.14",
+    "yfinance>=0.2.40",
+    "pybind11>=2.13",
+    "tqdm>=4.66",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "jupyter", "black", "ruff"]
+
+[tool.scikit-build]
+wheel.packages = ["python/hsmm_regime"]
+cmake.source-dir = "."
+build-dir = "build"
+
+[tool.pytest.ini_options]
+testpaths = ["python/hsmm_regime/tests"]

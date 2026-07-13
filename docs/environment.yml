@@ -1,0 +1,23 @@
+name: hsmm-regime
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - cmake>=3.20
+  - cxx-compiler
+  - eigen
+  - pybind11
+  - numpy
+  - scipy
+  - pandas
+  - matplotlib
+  - statsmodels
+  - jupyter
+  - pip
+  - pip:
+      - yfinance
+      - scikit-build-core
+      - tqdm
+      - pytest
+      - black
+      - ruff
