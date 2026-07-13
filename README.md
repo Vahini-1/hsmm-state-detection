@@ -2,7 +2,7 @@
 
 A quantitative research framework for identifying structural market breaks and dynamically modeling financial time series using Bayesian inference. This repository extends standard regime-switching models by implementing explicit-duration Hidden Semi-Markov Models (HSMMs) and Markov-Switching Vector Autoregressions (MS-VAR), enabling robust real-time adaptation for algorithmic asset allocation.
 
-## 🧠 Core Methodology
+## Core Methodology
 
 This project implements both retrospective (offline) analysis and real-time (online) inference to model the joint dynamics of asset returns, volatility, and macroeconomic covariates.
 
