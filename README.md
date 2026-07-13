@@ -22,7 +22,7 @@ This project implements both retrospective (offline) analysis and real-time (onl
 * **Purpose:** Captures the joint, multivariate dynamics of market returns and macroeconomic factors under different hidden states.
 * **Output:** Generates regime-dependent Impulse Response Functions (IRFs) to analyze the impact of macro shocks across different market environments.
 
-## 📂 Repository Structure
+## Repository Structure
 ```text
 hsmm-regime/
 ├── cpp/
